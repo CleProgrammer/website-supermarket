@@ -1,5 +1,6 @@
 {
   "name": "api-weather",
+  "homepage": "https://cleprogrammer.github.io/website-supermarket/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,7 +15,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://cleprogrammer.github.io/website-supermarket/",
+  
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
