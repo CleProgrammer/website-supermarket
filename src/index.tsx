@@ -10,12 +10,12 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
-        <HashRouter>
+        <BrowserRouter basename="/website-supermarket">
             <Routes>
-                <Route path="/" element={<Home/>}/>
+                <Route path="/website-supermarket" element={<Home/>}/>
                 <Route path="/searchpage" element={<Searchpage/>}/>
                 <Route path="/productpage" element={<Productpage/>}/>
             </Routes>
-        </HashRouter>
+        </BrowserRouter>
     </React.StrictMode>
 )
