@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/website-supermarket/static/css/main.d898490c.css",
-    "main.js": "/website-supermarket/static/js/main.035fd586.js",
+    "main.css": "/website-supermarket/static/css/main.7a6dd6f6.css",
+    "main.js": "/website-supermarket/static/js/main.85fbc886.js",
     "static/media/logoSite.png": "/website-supermarket/static/media/logoSite.94cda6d34aa68451b96c.png",
     "static/media/openmenumobile.png": "/website-supermarket/static/media/openmenumobile.efc3a1cc3b1c5398ba3b.png",
     "static/media/openmenumobilerotate.png": "/website-supermarket/static/media/openmenumobilerotate.8e41213262774577bb2a.png",
     "static/media/lupa.png": "/website-supermarket/static/media/lupa.7408d4718310ae5a8037.png",
     "static/media/star-rating.webp": "/website-supermarket/static/media/star-rating.c2084fe5bc1067a4dd78.webp",
     "index.html": "/website-supermarket/index.html",
-    "main.d898490c.css.map": "/website-supermarket/static/css/main.d898490c.css.map",
-    "main.035fd586.js.map": "/website-supermarket/static/js/main.035fd586.js.map"
+    "main.7a6dd6f6.css.map": "/website-supermarket/static/css/main.7a6dd6f6.css.map",
+    "main.85fbc886.js.map": "/website-supermarket/static/js/main.85fbc886.js.map"
   },
   "entrypoints": [
-    "static/css/main.d898490c.css",
-    "static/js/main.035fd586.js"
+    "static/css/main.7a6dd6f6.css",
+    "static/js/main.85fbc886.js"
   ]
 }
