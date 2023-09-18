@@ -64,7 +64,7 @@ export default function Header() {
     return (
         <div className='main-header'>
             <div className='header-section1'>
-                <a href='/'><img src={Logosite}/></a>
+                <a href='#/'><img src={Logosite}/></a>
             </div>
             <div className='header-section2'>
                 <input className='input-search-product' placeholder='encontrar produto'/>
