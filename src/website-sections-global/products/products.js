@@ -65,7 +65,7 @@ export default function Products({link, prices}) {
                         <div className='min-max'>
                             <input className='inputChoosePriceMin' placeholder='Min.'/>
                             <input className='inputChoosePriceMax' placeholder='Max.'/>
-                            <div className='filter-price' onClick={filterPrice}><a href='/searchpage'>Filtrar</a></div>
+                            <div className='filter-price' onClick={filterPrice}><a href='#/searchpage'>Filtrar</a></div>
                         </div>
                         <div className='categories'>
                             <div style={{fontWeight: '600', marginBottom: '5px'}}>CATEGORIAS</div>

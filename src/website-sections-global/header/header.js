@@ -73,7 +73,7 @@ export default function Header() {
             <div className='header-section3'>
                 <div className='header-section3-menu' onMouseOver={openMenu}>
                     <ul id='disable'>
-                        <a href='/' style={{textDecoration: 'none', color: 'white'}}><li id='home'>HOME</li></a>
+                        <a href='#/' style={{textDecoration: 'none', color: 'white'}}><li id='home'>HOME</li></a>
                         <a href='#/searchpage' style={{textDecoration: 'none', color: 'white'}}><li id='iphone' onClick={goToPageSection}>IPHONE</li></a>
                         <a href='#/searchpage' style={{textDecoration: 'none', color: 'white'}}><li id='samsung' onClick={goToPageSection}>SAMSUNG</li></a>
                         <li id='contacts' onClick={goToPageSection}>CONTATO</li>
