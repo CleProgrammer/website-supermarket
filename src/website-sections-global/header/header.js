@@ -16,7 +16,10 @@ export default function Header() {
             c('.main-header .header-section3 .header-section3-menu ul').style.display = 'flex'
             c('.main-header .header-section3 .header-section3-menu ul').id = 'enable'
             c('.main-header .header-section3 .header-section3-menu').style.backgroundImage = `url(${OpenedMenu})`
-            c('.main-header .header-section3 .header-section3-menu').addEventListener('mouseout', closeMenu)
+        } else if( c('.main-header .header-section3 .header-section3-menu ul').id === 'enable' ) {
+            c('.main-header .header-section3 .header-section3-menu ul').style.display = 'none'
+            c('.main-header .header-section3 .header-section3-menu ul').id = 'disable'
+            c('.main-header .header-section3 .header-section3-menu').style.backgroundImage = `url(${ClosedMenu})`
         }
     }
 
@@ -71,7 +74,7 @@ export default function Header() {
                 <a href='#/searchpage'><img src={Lupasite} onClick={searchProduct}/></a>
             </div>
             <div className='header-section3'>
-                <div className='header-section3-menu' onMouseOver={openMenu}>
+                <div className='header-section3-menu' onClick={openMenu}>
                     <ul id='disable'>
                         <a href='#/' style={{textDecoration: 'none', color: 'white'}}><li id='home'>HOME</li></a>
                         <a href='#/searchpage' style={{textDecoration: 'none', color: 'white'}}><li id='iphone' onClick={goToPageSection}>IPHONE</li></a>

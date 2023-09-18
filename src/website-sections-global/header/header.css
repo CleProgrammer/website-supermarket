@@ -61,6 +61,7 @@
     border-radius: 50%;
     background-image: url('../header//images/openmenumobile.png');
     background-size: cover;
+    cursor: pointer;
 }
 
 .main-header .header-section3 .header-section3-menu ul {
@@ -81,4 +82,33 @@
     position: absolute;
     cursor: pointer;
 }
+
+
+
+@media (max-width: 480px) {
+    .main-header {
+        width: 100%;
+    }
+
+    .main-header .header-section1 {
+        width: 15%;
+        height: 50%;
+    }
+
+    .main-header .header-section2 {
+        width: 55%;
+        height: 5em;
+    }
+    
+    .main-header input {
+        width: 80%;
+        height: 2em;
+        font-size: 17px;
+    }
+   
+    .main-header .header-section3 {
+        width: 15%;
+    }  
+}
+
 
