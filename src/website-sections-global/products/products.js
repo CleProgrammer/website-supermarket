@@ -69,11 +69,11 @@ export default function Products({link, prices}) {
                         </div>
                         <div className='categories'>
                             <div style={{fontWeight: '600', marginBottom: '5px'}}>CATEGORIAS</div>
-                            <a href='/searchpage'><div className='smartphones' onClick={filterCategory}>smartphone</div></a>
-                            <a href='/searchpage'><div className='laptops' onClick={filterCategory}>notebook</div></a>
-                            <a href='/searchpage'><div className='fragrances' onClick={filterCategory}>perfume</div></a>
-                            <a href='/searchpage'><div className='skincare' onClick={filterCategory}>creme facial</div></a>
-                            <a href='/searchpage'><div className='groceries' onClick={filterCategory}>alimento</div></a>
+                            <a href='#/searchpage'><div className='smartphones' onClick={filterCategory}>smartphone</div></a>
+                            <a href='#/searchpage'><div className='laptops' onClick={filterCategory}>notebook</div></a>
+                            <a href='#/searchpage'><div className='fragrances' onClick={filterCategory}>perfume</div></a>
+                            <a href='#/searchpage'><div className='skincare' onClick={filterCategory}>creme facial</div></a>
+                            <a href='#/searchpage'><div className='groceries' onClick={filterCategory}>alimento</div></a>
                             <div></div>
                         </div>
                     </div>
@@ -100,7 +100,7 @@ export default function Products({link, prices}) {
                                         ): (
                                             <div className='div-section-products-informations-description'>{item.description}</div>  
                                         )}
-                                        <a href='/productpage'><div id={item.id} className='seeProductButtom' onClick={selectProduct}>VER</div></a>
+                                        <a href='#/productpage'><div id={item.id} className='seeProductButtom' onClick={selectProduct}>VER</div></a>
                                         
                                     </div>
                                 </div>
@@ -123,7 +123,7 @@ export default function Products({link, prices}) {
                                         ): (
                                             <div className='div-section-products-informations-description'>{item.description}</div>  
                                         )}
-                                        <a href='/productpage'><div id={item.id} className='seeProductButtom' onClick={selectProduct}>VER</div></a>
+                                        <a href='#/productpage'><div id={item.id} className='seeProductButtom' onClick={selectProduct}>VER</div></a>
                                     </div>
                                 </div> 
                             ) 
