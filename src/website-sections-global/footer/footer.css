@@ -26,8 +26,17 @@
 
 
 
-
+/*MOBILE*/
 @media (max-width: 480px) {
+    .footer-main {
+        width: 100%;
+    }
+}
+
+
+
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 991px) {
     .footer-main {
         width: 100%;
     }

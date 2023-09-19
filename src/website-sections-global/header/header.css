@@ -34,16 +34,14 @@
 }
 
 .main-header .header-section2 a {
-    width: 50px;
-    height: 50px;
-    margin-top: 13px;
+    width: 30px;
+    height: 36px;
 }
 
 .main-header .header-section2 a img {
-    width: 60%;
+    width: 100%;
     background-color: white;
     padding: 3px;
-    border: none;
 }
 
 .main-header .header-section3 {
@@ -96,19 +94,50 @@
     }
 
     .main-header .header-section2 {
-        width: 55%;
+        width: 50%;
         height: 5em;
     }
-    
+
+
     .main-header input {
-        width: 80%;
-        height: 2em;
-        font-size: 17px;
+        width: 70%;
+        height: 2.5em;
+        border: none;
+        padding-left: 10px;
+    }
+    
+    .main-header .header-section2 a {
+        width: 30px;
+        height: 36px;
+    }
+    
+    .main-header .header-section2 a img {
+        width: 100%;
+        background-color: white;
+        padding: 3px;
     }
    
     .main-header .header-section3 {
         width: 15%;
     }  
+
+    .main-header .header-section3 .header-section3-menu ul {
+        margin-left: -30px;
+    }
 }
+
+
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-header {
+        width: 100%;
+    }
+
+    .main-header .header-section2 {
+        width: 30%;
+    }
+}
+
+
 
 

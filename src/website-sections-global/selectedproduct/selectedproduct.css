@@ -115,7 +115,7 @@
 }
 
 
-
+/*MOBILE*/
 @media (max-width: 480px) {
     .selectedproduct-main {
         flex-direction: column;
@@ -152,6 +152,54 @@
     
     .selectedproduct-main .product-informations .desc {
         font-size: 20px;
+    }
+    
+    .selectedproduct-main .selectedproduct-3-buy,
+    .selectedproduct-main .selectedproduct-3-cart {
+        width: 50vw;
+        margin-left: 15px;
+        height: 40px;
+    }
+}
+
+
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .selectedproduct-main {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .selectedproduct-main .selectedproduct-1 {
+        width: 100%; 
+        height: 400px;
+    }
+
+    .selectedproduct-main .product-informations {
+        width: 50vw;
+        height: 300px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    .selectedproduct-main .product-informations .title {
+        font-size: 50px;
+    }
+    
+    .selectedproduct-main .product-informations .rating {
+        font-size: 25px;
+    }
+    
+    .selectedproduct-main .product-informations .rating img {
+        width: 8%;
+    }
+    
+    .selectedproduct-main .product-informations .price {
+        font-size: 60px;
+    }
+    
+    .selectedproduct-main .product-informations .desc {
+        font-size: 21px;
     }
     
     .selectedproduct-main .selectedproduct-3-buy,
