@@ -13,15 +13,31 @@ export default function Products({link, prices}) {
     const [savePriceMax, setSavePriceMax] = useState([])
     const [checkFilter, setcheckFilter] = useState(false)
 
+
+    let saveCheckFilter = localStorage.getItem('checkFilter')
     function filterPrice() {
         localStorage.setItem('priceMin', c('.inputChoosePriceMin').value)
         localStorage.setItem('priceMax', c('.inputChoosePriceMax').value)
         localStorage.setItem('checkFilter', 'true')
+
+        if( saveCheckFilter === 'true' ) {
+            window.location.reload()
+        }
+
+        /*localStorage.removeItem('priceMin')
+        localStorage.removeItem('priceMax')*/
     }
 
     function filterCategory(e) {
         localStorage.setItem('searchProduct', `/category/${e.target.className}`)
         localStorage.setItem('checkFilter', 'true')
+
+        if( saveCheckFilter === 'true' ) {
+            window.location.reload()
+        }
+
+        localStorage.removeItem('priceMin')
+        localStorage.removeItem('priceMax')
     }
 
     function selectProduct(e) {
@@ -49,7 +65,7 @@ export default function Products({link, prices}) {
             }
         }
 
-        let saveCheckFilter = localStorage.getItem('checkFilter')
+        
         if( saveCheckFilter === 'true' ) {
             setcheckFilter( true )
         } else if( saveCheckFilter === 'false' ) {
