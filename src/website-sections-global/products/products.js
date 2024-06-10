@@ -47,7 +47,9 @@ export default function Products({link, prices}) {
     useEffect(() => {
         const getProducts = async (e) => {
             let getData = await ApiCall(e)
-            setSaveProducts( getData.products )   
+            setSaveProducts( getData.products )  
+
+            console.log( getData.products )
         }
         getProducts(link)
 

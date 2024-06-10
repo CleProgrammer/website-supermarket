@@ -16,10 +16,13 @@ export default function Selectedproduct() {
         c('.image-zoom').style.backgroundImage = 'url("' + saveImg + '")'
         c('.image-zoom').style.marginLeft = `calc(270px - ${e.clientX}px)`
         c('.image-zoom').style.marginTop = `calc(125px - ${e.clientY}px)`
+
+        c('.selectedproduct-1-selected-image').style.backgroundImage = ''
     }
 
     function changeImage() {
         c('.image-zoom').style.backgroundImage = ''
+        c('.selectedproduct-1-selected-image').style.backgroundImage = 'url("' + saveImg + '")'
     }
 
     useEffect(() => {
@@ -29,6 +32,8 @@ export default function Selectedproduct() {
             let getData = await ApiCall(e)
             setsaveData( getData )
             setsaveImg( getData.images[0] )
+
+            console.log( getData )
         }
 
         getData(getIdSelectedProduct)

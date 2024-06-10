@@ -1,16 +1,15 @@
 .main-product-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     height: 400px;
-    margin-top: 20px;
-    overflow: hidden;
-}
-
-.main-product-section .product-main a {
-    background-size: cover;
+    margin-top: 20px; 
+    background-color: rgb(235, 235, 235);
 }
 
 .main-product-section .product-main img {
-    width: 100%;
+    width: 55.2%;
 }
 
 
