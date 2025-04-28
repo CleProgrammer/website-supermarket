@@ -2,60 +2,67 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 80%;
-    height: 6em;
-    background-color: rgb(0, 0, 185);
+    width: 100vw;
+    height: 13vh;
+    background-color: rgb(0, 0, 0);
 }
 
 .main-header .header-section1 {
     display: flex;
-    width: 25%;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
     height: 80%;
 }
 
 .main-header .header-section1 img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
 }
 
 .main-header .header-section2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25%;
-    height: 5em;
+    text-align: center;
+    width: 40%;
+    height: 5.5vh;
 }
 
 .main-header input {
     width: 70%;
-    height: 2.5em;
+    height: 100%;
     border: none;
-    padding-left: 10px;
+    padding-left: 0.7vw;
+    border-radius: 0.4vw 0px 0px 0.4vw;
+    font-size: 0.9vw;
 }
 
 .main-header .header-section2 a {
-    width: 30px;
-    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7%;
+    height: 109%;
+    border-radius: 0px 0.4vw 0.4vw 0;
+    background-color: rgb(255, 255, 255);
 }
 
 .main-header .header-section2 a img {
-    width: 100%;
-    background-color: white;
-    padding: 3px;
+    width: 85%;
 }
 
 .main-header .header-section3 {
     display: flex;
     justify-content: end;
     align-items: center;
-    width: 25%;
+    width: 10%;
     height: 5em;
 }
 
 .main-header .header-section3 .header-section3-menu {
-    width: 50px;
-    height: 50px;
-    background-color: blue;
+    width: 2.95vw;
+    height: 2.95vw;
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     background-image: url('../header//images/openmenumobile.png');
     background-size: cover;
@@ -67,15 +74,17 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(0, 29, 156);
+    background-color: rgb(46, 46, 46);
     color: white;
+    border-radius: 0.3vw;
     list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
-    width: 80px;
-    height: 100px;
+    width: 5.9vw;
+    height: 14.8vh;
     padding: 8px;
-    margin-left: -20px;
+    margin-left: -30px;
     margin-top: 50px;
+    font-size: 1vw;
     display: none;
     position: absolute;
     cursor: pointer;
@@ -102,28 +111,37 @@
 
     .main-header input {
         width: 70%;
-        height: 2.5em;
+        height: 30%;
         border: none;
         padding-left: 10px;
+        font-size: 2.7vw;
     }
     
     .main-header .header-section2 a {
-        width: 30px;
-        height: 36px;
+        width: 28px;
+        height: 4vh;
     }
     
     .main-header .header-section2 a img {
-        width: 100%;
-        background-color: white;
-        padding: 3px;
+        width: 80%;
     }
    
     .main-header .header-section3 {
-        width: 15%;
+        width: 10%;
     }  
 
+    .main-header .header-section3 .header-section3-menu {
+        width: 6vw;
+        height: 6vw;
+    }
+
     .main-header .header-section3 .header-section3-menu ul {
-        margin-left: -30px;
+        width: 18vw;
+        height: 14.8vh;
+        margin-left: -37px;
+        border-radius: 5px;
+        margin-top: 35px;
+        font-size: 3vw;
     }
 }
 
@@ -137,6 +155,30 @@
     .main-header .header-section2 {
         width: 30%;
     }
+}
+
+/*EXTRA LARGE SCREENS*/
+@media (min-width: 1920px) {
+    .main-header input {
+        font-size: 1vw;
+    }
+
+    .main-header .header-section2 a {
+        width: 8%;
+        height: 103%;
+    }
+
+    .main-header .header-section2 a img {
+        width: 80%;
+    }
+
+    .main-header .header-section3 .header-section3-menu ul {
+        padding: 0.8vw;
+        margin-left: -2.5vw;
+        margin-top: 7vh;
+        font-size: 1vw;;
+    }
+    
 }
 
 

@@ -118,7 +118,7 @@ export default function Products({link, prices}) {
                                         ): (
                                             <div className='div-section-products-informations-description'>{item.description}</div>  
                                         )}
-                                        <a href='#/productpage'><div id={item.id} className='seeProductButtom' onClick={selectProduct}>VER</div></a>
+                                        <a href='#/productpage'><div id={item.id} className='seeProductButtom' onClick={selectProduct}>Comprar</div></a>
                                         
                                     </div>
                                 </div>
@@ -141,7 +141,7 @@ export default function Products({link, prices}) {
                                         ): (
                                             <div className='div-section-products-informations-description'>{item.description}</div>  
                                         )}
-                                        <a href='#/productpage'><div id={item.id} className='seeProductButtom' onClick={selectProduct}>VER</div></a>
+                                        <a href='#/productpage'><div id={item.id} className='seeProductButtom' onClick={selectProduct}>Comprar</div></a>
                                     </div>
                                 </div> 
                             ) 

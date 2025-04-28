@@ -1,12 +1,11 @@
 .footer-main {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: end;
     align-items: center;
-    width: 80%;
-    height: 150px;
-    background-color: blue;
-    margin-top: 100px;
+    width: 100vw;
+    height: 30vh;
+    background-color: rgb(0, 0, 0);
 }
 
 .footer-main .footer-container {
@@ -14,14 +13,49 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 60%;
+    height: 50%;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    margin-bottom: 2vh;
+}
+
+.footer-main .footer-container .footer-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 23%;
+    height: 50%;
+}
+
+.footer-main .footer-container .footer-icons img {
+    width: 10%;
 }
 
 .footer-main .footer-container #home {
     cursor: pointer;
+}
+
+.footer-main .footer-container .footer-sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 23%;
+    height: 30%;
+    font-size: 0.8vw;
+}
+
+.footer-main .footer-rights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 25%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
+    background-color: rgb(10, 10, 10);
 }
 
 
@@ -29,8 +63,43 @@
 /*MOBILE*/
 @media (max-width: 480px) {
     .footer-main {
-        width: 100%;
+        height: 23vh;
     }
+
+    .footer-main .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        height: 60%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 2vh;
+    }
+    
+    .footer-main .footer-container .footer-icons {
+        width: 70%;
+        height: 50%;
+    }
+    
+    .footer-main .footer-container .footer-icons img {
+        width: 10%;
+    }
+    
+    .footer-main .footer-container #home {
+        cursor: pointer;
+    }
+    
+    .footer-main .footer-container .footer-sections {
+        width: 70%;
+        font-size: 2.8vw;
+    }
+    
+    .footer-main .footer-rights {
+        height: 30%;
+        font-size: 3.5vw;
+    }
+    
 }
 
 
