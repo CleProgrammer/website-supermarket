@@ -26,8 +26,7 @@
 }
 
 .selectedproduct-main .selectedproduct-1 .selectedproduct-1-images img {
-    width: 130px;
-    height: 95px;
+    width: 100%;
 }
 
 .selectedproduct-main .selectedproduct-1 .selectedproduct-1-images img:hover {
@@ -126,7 +125,8 @@
 @media (max-width: 480px) {
     .selectedproduct-main {
         flex-direction: column;
-        width: 100%;
+        width: 90%;
+        height: 550px;
     }
 
     .selectedproduct-main .selectedproduct-1 {
@@ -134,15 +134,22 @@
         height: 300px;
     }
 
+    .selectedproduct-main .selectedproduct-1 .selectedproduct-1-images img {
+        width: 100%; 
+    }
+
+    .selectedproduct-main .selectedproduct-2 {
+        width: 100%;
+    }
+
     .selectedproduct-main .product-informations {
-        width: 50vw;
-        height: 210px;
-        margin-left: 15px;
-        margin-top: 15px;
+        width: 100%;
+        margin-top: 20px;
     }
 
     .selectedproduct-main .product-informations .title {
-        font-size: 40px;
+        font-size: 7vw;
+        width: 100%;
     }
     
     .selectedproduct-main .product-informations .rating {
@@ -154,18 +161,26 @@
     }
     
     .selectedproduct-main .product-informations .price {
-        font-size: 50px;
+        font-size: 40px;
     }
     
     .selectedproduct-main .product-informations .desc {
-        font-size: 20px;
+        font-size: 15px;
+    }
+
+    .selectedproduct-main .selectedproduct-2 .product-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 25%;
     }
     
     .selectedproduct-main .selectedproduct-3-buy,
     .selectedproduct-main .selectedproduct-3-cart {
-        width: 50vw;
-        margin-left: 15px;
+        width: 48%;
         height: 40px;
+        font-size: 3vw;
     }
 }
 
@@ -211,7 +226,7 @@
     
     .selectedproduct-main .selectedproduct-3-buy,
     .selectedproduct-main .selectedproduct-3-cart {
-        width: 50vw;
+        width: 40vw;
         margin-left: 15px;
         height: 40px;
     }

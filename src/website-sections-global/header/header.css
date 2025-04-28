@@ -99,31 +99,32 @@
     }
 
     .main-header .header-section1 {
-        width: 15%;
+        width: 18%;
         height: 50%;
     }
 
     .main-header .header-section2 {
         width: 50%;
-        height: 5em;
+        height: 3.4vh;
+        background-color: green;
     }
 
 
     .main-header input {
-        width: 70%;
-        height: 30%;
+        width: 80%;
+        height: 100%;
         border: none;
-        padding-left: 10px;
+        padding-left: 8px;
         font-size: 2.7vw;
     }
     
     .main-header .header-section2 a {
-        width: 28px;
-        height: 4vh;
+        width: 20%;
+        height: 106%;
     }
     
     .main-header .header-section2 a img {
-        width: 80%;
+        width: 70%;
     }
    
     .main-header .header-section3 {
@@ -131,8 +132,8 @@
     }  
 
     .main-header .header-section3 .header-section3-menu {
-        width: 6vw;
-        height: 6vw;
+        width: 7vw;
+        height: 7vw;
     }
 
     .main-header .header-section3 .header-section3-menu ul {

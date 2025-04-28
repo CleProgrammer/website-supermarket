@@ -230,6 +230,7 @@
         height: 150px;
         font-size: 18px;
         margin-top: 30px;
+        font-weight: 0;
     }
 
     .products-main .section-products {

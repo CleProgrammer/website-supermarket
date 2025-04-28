@@ -150,7 +150,7 @@ export default function Products({link, prices}) {
                 </>
             ): saveProducts.length === 0 && (
                 <div className='product-not-found'>
-                    Produto não encontrado
+                    Carregando...
                 </div>
             )}
 
