@@ -185,49 +185,67 @@
 }
 
 
-/*TABLET*/
+/*SMALL TABLET*/
 @media (min-width: 768px) and (max-width: 991px) {
     .selectedproduct-main {
         flex-direction: column;
-        width: 100%;
+        width: 90%;
+        height: 800px;
     }
 
     .selectedproduct-main .selectedproduct-1 {
         width: 100%; 
-        height: 400px;
+        height: 50%;
     }
 
-    .selectedproduct-main .product-informations {
-        width: 50vw;
-        height: 300px;
-        margin-left: 15px;
-        margin-top: 15px;
+    .selectedproduct-main .selectedproduct-1 .selectedproduct-1-images img {
+        width: 100%; 
     }
 
-    .selectedproduct-main .product-informations .title {
+    .selectedproduct-main .selectedproduct-2 {
+        width: 95%;
+        height: 50%;
+    }
+
+    .selectedproduct-main .selectedproduct-2 .product-informations {
+        width: 100%;
+        height: 250px;
+        margin-top: 20px;
+    }
+
+    .selectedproduct-main .selectedproduct-2 .product-informations .title {
+        font-size: 7vw;
+        width: 100%;
+    }
+    
+    .selectedproduct-main .selectedproduct-2 .product-informations .rating {
+        font-size: 30px;
+    }
+    
+    .selectedproduct-main .selectedproduct-2 .product-informations .rating img {
+        width: 4.5%;
+    }
+    
+    .selectedproduct-main .selectedproduct-2 .product-informations .price {
         font-size: 50px;
     }
     
-    .selectedproduct-main .product-informations .rating {
-        font-size: 25px;
+    .selectedproduct-main .selectedproduct-2 .product-informations .desc {
+        font-size: 22px;
+    }
+
+    .selectedproduct-main .selectedproduct-2 .product-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 25%;
     }
     
-    .selectedproduct-main .product-informations .rating img {
-        width: 8%;
-    }
-    
-    .selectedproduct-main .product-informations .price {
-        font-size: 60px;
-    }
-    
-    .selectedproduct-main .product-informations .desc {
-        font-size: 21px;
-    }
-    
-    .selectedproduct-main .selectedproduct-3-buy,
-    .selectedproduct-main .selectedproduct-3-cart {
-        width: 40vw;
-        margin-left: 15px;
-        height: 40px;
+    .selectedproduct-main .selectedproduct-2 .selectedproduct-3-buy,
+    .selectedproduct-main .selectedproduct-2 .selectedproduct-3-cart {
+        width: 49%;
+        height: 50px;
+        font-size: 3vw;
     }
 }

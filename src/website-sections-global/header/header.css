@@ -106,7 +106,6 @@
     .main-header .header-section2 {
         width: 50%;
         height: 3.4vh;
-        background-color: green;
     }
 
 
@@ -147,14 +146,56 @@
 }
 
 
-/*TABLET*/
+/*SMALL TABLET*/
 @media (min-width: 768px) and (max-width: 991px) {
     .main-header {
         width: 100%;
     }
 
+    .main-header .header-section1 {
+        width: 15%;
+        height: 50%;
+    }
+
     .main-header .header-section2 {
-        width: 30%;
+        width: 45%;
+        height: 4vh;
+    }
+
+
+    .main-header input {
+        width: 85%;
+        height: 100%;
+        border: none;
+        padding-left: 8px;
+        font-size: 2.4vw;
+    }
+    
+    .main-header .header-section2 a {
+        width: 15%;
+        height: 104%;
+    }
+    
+    .main-header .header-section2 a img {
+        width: 70%;
+    }
+   
+    .main-header .header-section3 {
+        width: 10%;
+    }  
+
+    .main-header .header-section3 .header-section3-menu {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .main-header .header-section3 .header-section3-menu ul {
+        width: 18vw;
+        height: 16vh;
+        margin-left: -60px;
+        border-radius: 5px;
+        margin-top: 60px;
+        font-size: 3vw;
     }
 }
 

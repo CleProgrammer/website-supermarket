@@ -8,9 +8,6 @@ export default function Slidersection() {
     const c = (cl) => document.querySelector(cl)
     let screen = window.innerWidth
 
-    //console.log( screen )
-    //c('')
-
     /*goToPageSection*/
     function goToPageSection(e) {
         if( e.target.id === 'laptops' ) {
@@ -20,7 +17,7 @@ export default function Slidersection() {
 
 
     useEffect(() => {
-        if( screen <= 480 ) {
+        if( screen <= 480 || screen <= 884 ) {
             if( c('.image-main-product') ) {
                 c('.image-main-product').src = ThumMainProductMobile
             }
