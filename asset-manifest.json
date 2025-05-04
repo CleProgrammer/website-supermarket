@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/website-supermarket/static/css/main.bab4bc5f.css",
-    "main.js": "/website-supermarket/static/js/main.d9206648.js",
+    "main.js": "/website-supermarket/static/js/main.2e94979c.js",
     "static/media/mainproductmobile.png": "/website-supermarket/static/media/mainproductmobile.f5c872681e1d68f8e355.png",
     "static/media/mainproduct.png": "/website-supermarket/static/media/mainproduct.7fcc898a8c7e323eeff9.png",
     "static/media/pinterest.png": "/website-supermarket/static/media/pinterest.72c435a370d7890a1a65.png",
@@ -12,10 +12,10 @@
     "static/media/star-rating.webp": "/website-supermarket/static/media/star-rating.c2084fe5bc1067a4dd78.webp",
     "index.html": "/website-supermarket/index.html",
     "main.bab4bc5f.css.map": "/website-supermarket/static/css/main.bab4bc5f.css.map",
-    "main.d9206648.js.map": "/website-supermarket/static/js/main.d9206648.js.map"
+    "main.2e94979c.js.map": "/website-supermarket/static/js/main.2e94979c.js.map"
   },
   "entrypoints": [
     "static/css/main.bab4bc5f.css",
-    "static/js/main.d9206648.js"
+    "static/js/main.2e94979c.js"
   ]
 }
