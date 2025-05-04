@@ -33,28 +33,52 @@ export default function Header() {
     }
 
     /*SECTION SEARCH PRODUCT*/
-    async function searchProduct() {
-        if( localStorage.getItem('priceMin') ) {
-            localStorage.removeItem('priceMin')
+    async function searchProduct(e) {
+
+        if( sessionStorage.getItem('priceMin') ) {
+            sessionStorage.removeItem('priceMin')
         }
 
-        if( localStorage.getItem('priceMax') ) {
-            localStorage.removeItem('priceMax')
+        if( sessionStorage.getItem('priceMax') ) {
+            sessionStorage.removeItem('priceMax')
         }
 
-        localStorage.setItem('checkFilter', 'false')
+        sessionStorage.setItem('checkFilter', 'false')
 
+        if( e.target.className === 'goToHomeLogo' ) {
+            sessionStorage.removeItem('checkifinsearchpage')
+        }
+        
+        if( e.target.className === 'searchLupa' ) {
+            if( sessionStorage.getItem('checkifinsearchpage') === 'true' ) {
+                window.location.reload()
+            }
+            sessionStorage.setItem('checkifinsearchpage', 'true')
+        }
+         
         let input = `search?q=${c('.input-search-product').value}`
-        localStorage.setItem( 'searchProduct', input )    
+        sessionStorage.setItem('searchProduct', input)
     }
 
     /*goToPageSection*/
     function goToPageSection(e) {
-        if( e.target.id === 'iphone' ) {
-            localStorage.setItem('searchProduct', `search?q=${e.target.id}`)
-        } else if( e.target.id === 'samsung' ) {
-            localStorage.setItem('searchProduct', `search?q=${e.target.id}`)
+
+        if( e.target.id === 'iphone' && sessionStorage.getItem('checkifinsearchpage') === 'true' ) {
+            sessionStorage.setItem('searchProduct', `search?q=${e.target.id}`)
+            window.location.reload()
+        } else if( e.target.id === 'iphone' ) {
+            sessionStorage.setItem('searchProduct', `search?q=${e.target.id}`)
         }
+        
+
+        if( e.target.id === 'samsung' && sessionStorage.getItem('checkifinsearchpage') === 'true' ) {
+            sessionStorage.setItem('searchProduct', `search?q=${e.target.id}`)
+            window.location.reload()
+        } else if( e.target.id === 'samsung' ) {
+            sessionStorage.setItem('searchProduct', `search?q=${e.target.id}`)
+        } 
+
+        sessionStorage.setItem('checkifinsearchpage', 'true')
 
         if( e.target.id === 'contacts' ) {
             let bodySize = document.body.clientHeight
@@ -67,11 +91,11 @@ export default function Header() {
     return (
         <div className='main-header'>
             <div className='header-section1'>
-                <a href='#/'><img src={Logosite}/></a>
+                <a href='#/' onClick={searchProduct}><img className='goToHomeLogo' src={Logosite}/></a>
             </div>
             <div className='header-section2'>
                 <input className='input-search-product' placeholder='encontrar produto'/>
-                <a href='#/searchpage'><img src={Lupasite} onClick={searchProduct}/></a>
+                <a href='#/searchpage'><img src={Lupasite} className='searchLupa' onClick={searchProduct}/></a>
             </div>
             <div className='header-section3'>
                 <div className='header-section3-menu' onClick={openMenu}>

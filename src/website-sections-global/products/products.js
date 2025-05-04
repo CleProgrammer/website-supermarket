@@ -14,44 +14,52 @@ export default function Products({link, prices}) {
     const [checkFilter, setcheckFilter] = useState(false)
 
 
-    let saveCheckFilter = localStorage.getItem('checkFilter')
+    let saveCheckFilter = sessionStorage.getItem('checkFilter')
     function filterPrice() {
-        localStorage.setItem('priceMin', c('.inputChoosePriceMin').value)
-        localStorage.setItem('priceMax', c('.inputChoosePriceMax').value)
-        localStorage.setItem('checkFilter', 'true')
+        sessionStorage.setItem('priceMin', c('.inputChoosePriceMin').value)
+        sessionStorage.setItem('priceMax', c('.inputChoosePriceMax').value)
+        sessionStorage.setItem('checkFilter', 'true')
 
         if( saveCheckFilter === 'true' ) {
             window.location.reload()
         }
 
-        /*localStorage.removeItem('priceMin')
-        localStorage.removeItem('priceMax')*/
+        /*sessionStorage.removeItem('priceMin')
+        sessionStorage.removeItem('priceMax')*/
     }
 
     function filterCategory(e) {
-        localStorage.setItem('searchProduct', `/category/${e.target.className}`)
-        localStorage.setItem('checkFilter', 'true')
+        sessionStorage.setItem('searchProduct', `/category/${e.target.className}`)
+        sessionStorage.setItem('checkFilter', 'true')
 
-        if( saveCheckFilter === 'true' ) {
+        if( saveCheckFilter === 'true' || sessionStorage.getItem('checkifinsearchpage') === 'true' ) {
             window.location.reload()
         }
 
-        localStorage.removeItem('priceMin')
-        localStorage.removeItem('priceMax')
+        sessionStorage.removeItem('priceMin')
+        sessionStorage.removeItem('priceMax')
+        sessionStorage.setItem('checkifinsearchpage', 'true')
     }
 
     function selectProduct(e) {
-        localStorage.setItem('selectedproduct', e.target.id)
+        sessionStorage.setItem('selectedproduct', e.target.id)
+        sessionStorage.removeItem('checkifinsearchpage')
+        sessionStorage.setItem('checkFilter', 'true')
     }
 
     useEffect(() => {
         const getProducts = async (e) => {
             let getData = await ApiCall(e)
             setSaveProducts( getData.products )  
-
-            console.log( getData.products )
         }
         getProducts(link)
+
+        /*const findProducts = async () => {
+            let data2 = await ApiCall('/categories')
+            console.log( data2 )
+            return data2
+        }
+        findProducts()*/
 
         if( prices ) {
             if(prices[0] === '') {
@@ -67,7 +75,6 @@ export default function Products({link, prices}) {
             }
         }
 
-        
         if( saveCheckFilter === 'true' ) {
             setcheckFilter( true )
         } else if( saveCheckFilter === 'false' ) {
@@ -90,7 +97,7 @@ export default function Products({link, prices}) {
                             <a href='#/searchpage'><div className='smartphones' onClick={filterCategory}>smartphone</div></a>
                             <a href='#/searchpage'><div className='laptops' onClick={filterCategory}>notebook</div></a>
                             <a href='#/searchpage'><div className='fragrances' onClick={filterCategory}>perfume</div></a>
-                            <a href='#/searchpage'><div className='skincare' onClick={filterCategory}>creme facial</div></a>
+                            <a href='#/searchpage'><div className='furniture' onClick={filterCategory}>mobília</div></a>
                             <a href='#/searchpage'><div className='groceries' onClick={filterCategory}>alimento</div></a>
                             <div></div>
                         </div>

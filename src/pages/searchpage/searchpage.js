@@ -4,17 +4,17 @@ import '../searchpage/searchpage.css'
 import Products from '../../website-sections-global/products/products'
 
 export default function Serachpage() {
-    let productProp = localStorage.getItem('searchProduct')
+    let productProp = sessionStorage.getItem('searchProduct')
     if( productProp === null ) {
         productProp = ''
     }
 
-    let priceMin = localStorage.getItem('priceMin')
+    let priceMin = sessionStorage.getItem('priceMin')
     if( priceMin === null ) {
         priceMin = 0
     }
 
-    let priceMax = localStorage.getItem('priceMax')
+    let priceMax = sessionStorage.getItem('priceMax')
     if( priceMax === null ) {
         priceMax = 1000000
     }

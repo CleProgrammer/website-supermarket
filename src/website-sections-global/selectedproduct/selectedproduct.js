@@ -26,14 +26,12 @@ export default function Selectedproduct() {
     }
 
     useEffect(() => {
-        let getIdSelectedProduct = localStorage.getItem('selectedproduct')
+        let getIdSelectedProduct = sessionStorage.getItem('selectedproduct')
 
         const getData = async (e) =>  {
             let getData = await ApiCall(e)
             setsaveData( getData )
             setsaveImg( getData.images[0] )
-
-            console.log( getData )
         }
 
         getData(getIdSelectedProduct)

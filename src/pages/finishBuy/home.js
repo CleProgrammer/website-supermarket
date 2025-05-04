@@ -6,10 +6,10 @@ import Products from '../../website-sections-global/products/products';
 import Footer from '../../website-sections-global/footer/footer';
 
 function Home() {
-  localStorage.removeItem('priceMin')
-  localStorage.removeItem('priceMax')
-  localStorage.removeItem('searchProduct')
-  localStorage.setItem('checkFilter', 'false')
+  sessionStorage.removeItem('priceMin')
+  sessionStorage.removeItem('priceMax')
+  sessionStorage.removeItem('searchProduct')
+  sessionStorage.setItem('checkFilter', 'false')
   let productProp = ''
 
   return (
