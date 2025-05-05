@@ -11,7 +11,7 @@ export default function Slidersection() {
     /*goToPageSection*/
     function goToPageSection(e) {
         if( e.target.id === 'laptops' ) {
-            localStorage.setItem('searchProduct', `category/${e.target.id}`)
+            sessionStorage.setItem('searchProduct', `category/${e.target.id}`)
         }
     }
 
